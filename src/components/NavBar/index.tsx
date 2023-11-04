@@ -14,9 +14,6 @@ export default function NavBar({
     <div className="flex items-center justify-between m-auto my-5 bg-white sticky top-0 p-2 rounded-lg shadow-inner border-2 border-gray-300 w-3/4 h-auto">
       <motion.span
         animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 270, 270, 0],
-          borderRadius: ["20%", "20%", "50%", "50%", "20%"],
           color: isItemSelected ? "#3498db" : "black",
         }}
         className="text-lg ml-4 font-bold text-black font-sans "
