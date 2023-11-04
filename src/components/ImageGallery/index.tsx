@@ -30,7 +30,7 @@ export default function ImageGallery({
         toggleCheck={toggleCheck}
       />
 
-      <div className="aspect-square border-2 border-gray-500 p-20 border-dashed rounded-lg">
+      <div className="aspect-square border-2 border-gray-500 border-dashed rounded-lg">
         <img src="/images/add-image.png" alt="add image" />
       </div>
     </motion.div>
