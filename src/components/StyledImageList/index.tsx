@@ -1,4 +1,4 @@
-import { DndProvider, useDrag, useDrop, DropTargetMonitor } from "react-dnd";
+import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
 interface ImageProps {
@@ -26,10 +26,7 @@ const DraggableImage: React.FC<ImageProps> = ({
 
   const [, drop] = useDrop({
     accept: "IMAGE",
-    hover: (
-      item: { id: number; index: number },
-      monitor: DropTargetMonitor
-    ) => {
+    hover: (item: { id: number; index: number }) => {
       if (!item || item.index === undefined || index === undefined) return;
       if (item.index !== index) {
         moveImage(item.index, index);
